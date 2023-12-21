@@ -25,4 +25,4 @@ git pull
 cd ./build/libs
 
 # Run the application
-java -jar hello-application.war
+nohup java -jar hello-application.war
