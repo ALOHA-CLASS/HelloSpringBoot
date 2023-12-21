@@ -18,6 +18,8 @@ configurations {
 	}
 }
 
+mainClassName = 'com/joeun/hello/HelloApplication'
+
 repositories {
 	mavenCentral()
 }
