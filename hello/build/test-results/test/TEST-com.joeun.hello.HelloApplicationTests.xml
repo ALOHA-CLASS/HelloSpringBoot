@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.joeun.hello.HelloApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-21T07:55:09" hostname="DESKTOP-IGSCSGQ" time="2.325">
+<testsuite name="com.joeun.hello.HelloApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-21T08:09:59" hostname="DESKTOP-IGSCSGQ" time="1.457">
   <properties/>
-  <testcase name="contextLoads()" classname="com.joeun.hello.HelloApplicationTests" time="2.325"/>
-  <system-out><![CDATA[16:55:06.483 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.joeun.hello.HelloApplicationTests]: HelloApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:55:06.653 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.joeun.hello.HelloApplication for test class com.joeun.hello.HelloApplicationTests
+  <testcase name="contextLoads()" classname="com.joeun.hello.HelloApplicationTests" time="1.457"/>
+  <system-out><![CDATA[17:09:55.443 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.joeun.hello.HelloApplicationTests]: HelloApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:09:55.685 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.joeun.hello.HelloApplication for test class com.joeun.hello.HelloApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,10 +13,10 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2023-12-21T16:55:07.306+09:00  INFO 115124 --- [    Test worker] com.joeun.hello.HelloApplicationTests    : Starting HelloApplicationTests using Java 17.0.9 with PID 115124 (started by joeun in /home/joeun/workspace/HelloSpringBoot/hello)
-2023-12-21T16:55:07.309+09:00  INFO 115124 --- [    Test worker] com.joeun.hello.HelloApplicationTests    : No active profile set, falling back to 1 default profile: "default"
-2023-12-21T16:55:08.999+09:00  INFO 115124 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-12-21T16:55:09.536+09:00  INFO 115124 --- [    Test worker] com.joeun.hello.HelloApplicationTests    : Started HelloApplicationTests in 2.618 seconds (process running for 4.89)
+2023-12-21T17:09:56.559+09:00  INFO 119233 --- [    Test worker] com.joeun.hello.HelloApplicationTests    : Starting HelloApplicationTests using Java 17.0.9 with PID 119233 (started by joeun in /home/joeun/workspace/HelloSpringBoot/hello)
+2023-12-21T17:09:56.562+09:00  INFO 119233 --- [    Test worker] com.joeun.hello.HelloApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2023-12-21T17:09:59.162+09:00  INFO 119233 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-12-21T17:09:59.887+09:00  INFO 119233 --- [    Test worker] com.joeun.hello.HelloApplicationTests    : Started HelloApplicationTests in 3.879 seconds (process running for 6.899)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
