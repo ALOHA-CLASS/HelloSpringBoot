@@ -17,6 +17,6 @@ jobs:
       run: chmod -R 777 /home/joeun/workspace/HelloSpringBoot
 
     - name: deploy to server
-      run:  cd /home/joeun/workspace/HelloSpringBoot && 
-            nohup ./start.sh 
+      run:  cd /home/joeun/workspace/HelloSpringBoot/build/libs && 
+            nohup java -jar hello-application.war
             
