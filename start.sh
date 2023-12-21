@@ -17,7 +17,6 @@ cd /home/joeun/workspace/HelloSpringBoot
 
 # Pull the latest code from the repository
 git pull
-wait
 
 # Build the project in the background
 ./gradlew clean build 
