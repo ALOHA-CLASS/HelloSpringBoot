@@ -18,8 +18,8 @@ jobs:
 
     - name: Deploy to Server
       run: |
-        cd /home/joeun/workspace/HelloSpringBoot || exit 1
-
+        cd /home/joeun/workspace/HelloSpringBoot
+        
         # Run start.sh in the background and save PID
         nohup ./start.sh > /dev/null 2>&1 & echo $! > app.pid
 
