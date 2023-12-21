@@ -1,0 +1,17 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: deploy to server
+      run:  cd /home/joeun/workspace/HelloSpringBoot && ./start.sh 
