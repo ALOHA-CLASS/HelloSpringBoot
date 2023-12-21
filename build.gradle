@@ -35,3 +35,8 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+
+war {
+    archiveFileName = 'hello-app.war'
+}

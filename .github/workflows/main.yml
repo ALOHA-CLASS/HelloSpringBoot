@@ -28,5 +28,8 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew war
 
+    - name: change mode
+      run: chmod +x build/libs/hello-app.war
+
     - name: Run Java Application
-      run: java -jar ./build/libs/hello-app.war
+      run: java -jar build/libs/hello-app.war
