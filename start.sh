@@ -19,19 +19,12 @@ cd /home/joeun/workspace/HelloSpringBoot
 git pull
 
 # Build the project in the background
-./gradlew clean build &
-
-# Save the PID of the background process
-pid=$!
-
-# Wait for the background process to complete
-wait $pid
+./gradlew clean build 
 
 # Change directory to the build/libs
 cd ./build/libs
 
-
 # Run the application
-nohup java -jar hello-application.war &
+nohup java -jar hello-application.war 
 # java -jar hello-application.war &
 
