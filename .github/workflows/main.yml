@@ -18,5 +18,5 @@ jobs:
 
     - name: deploy to server
       run:  cd /home/joeun/workspace/HelloSpringBoot/build/libs && 
-            nohup java -jar hello-application.war
+            nohup java -jar hello-application.war &
             
