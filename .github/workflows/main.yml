@@ -17,4 +17,6 @@ jobs:
       run: chmod -R 777 /home/joeun/workspace/HelloSpringBoot
 
     - name: deploy to server
-      run:  cd /home/joeun/workspace/HelloSpringBoot && ./start.sh 
+      run:  cd /home/joeun/workspace/HelloSpringBoot && 
+            ./start.sh 
+            exit 0
