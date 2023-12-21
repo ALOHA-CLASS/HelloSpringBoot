@@ -1,2 +1,0 @@
-# HelloSpringBoot
-HelloSpringBoot
