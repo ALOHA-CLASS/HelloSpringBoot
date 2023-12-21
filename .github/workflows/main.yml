@@ -13,18 +13,13 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Change Permissions
+    - name: change mod
       run: chmod -R 777 /home/joeun/workspace/HelloSpringBoot
 
-    - name: Deploy to Server
-      run: |
-        cd /home/joeun/workspace/HelloSpringBoot
-        
-        # Run start.sh in the background and save PID
-        nohup ./start.sh > /dev/null 2>&1 & echo $! > app.pid
-
-        # Optionally, you can display the PID
-        cat app.pid
-
-        # Wait for the background process to finish
-        wait
+    # - name: deploy to server
+    #   run:  cd /home/joeun/workspace/HelloSpringBoot/build/libs && 
+    #         nohup java -jar hello-application.war &
+    - name: deploy to server
+      run:  cd /home/joeun/workspace/HelloSpringBoot && 
+            nohup ./start.sh &
+            

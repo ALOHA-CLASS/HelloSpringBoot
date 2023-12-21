@@ -1,3 +1,5 @@
+# start.sh
+
 #!/bin/bash
 
 # Find the process ID (PID) of the process containing "hello-application.war"
@@ -24,7 +26,5 @@ git pull
 # Change directory to the build/libs
 cd ./build/libs
 
-# Run the application
-nohup java -jar hello-application.war &
-# java -jar hello-application.war &
-
+# Run the application in the background and save PID to nohup.out
+nohup java -jar hello-application.war > nohup.out 2>&1 &
