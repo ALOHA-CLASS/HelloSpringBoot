@@ -22,6 +22,9 @@ jobs:
     - name: Make Gradle Wrapper Executable
       run: chmod +x ./hello/gradlew
 
+    - name: gradlew init
+      run: ./hello/gradlew init
+
     - name: Build with Gradle
       run: ./hello/gradlew clean build
 
