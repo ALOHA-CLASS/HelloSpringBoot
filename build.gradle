@@ -37,6 +37,11 @@ tasks.named('test') {
 }
 
 
+springBoot {
+    mainClassName = 'com.joeun.hello.HelloApplication'  
+}
+
+
 war {
     archiveFileName = 'hello-app.war'
 }
