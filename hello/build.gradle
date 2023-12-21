@@ -32,6 +32,10 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+war {
+    archiveFileName = 'hello-app.war'
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
