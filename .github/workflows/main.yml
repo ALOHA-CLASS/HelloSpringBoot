@@ -13,5 +13,8 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
+    - name: change mod
+      run: chmod -R 777 /home/joeun/workspace/HelloSpringBoot
+
     - name: deploy to server
       run:  cd /home/joeun/workspace/HelloSpringBoot && ./start.sh 
