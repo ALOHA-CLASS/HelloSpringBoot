@@ -37,11 +37,9 @@ tasks.named('test') {
 }
 
 
-springBoot {
-    mainClassName = 'com.joeun.hello.HelloApplication'  
-}
-
-
 war {
     archiveFileName = 'hello-app.war'
+	manifest {
+        attributes 'Main-Class': 'com.joeun.hello.HelloApplication'
+    }
 }
