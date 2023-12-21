@@ -26,7 +26,7 @@ jobs:
       run: ./hello/gradlew init
 
     - name: Build with Gradle
-      run: ./hello/gradlew clean build
+      run: ./hello/gradlew war
 
     - name: Run Java Application
       run: java -jar build/libs/hello-app.war
