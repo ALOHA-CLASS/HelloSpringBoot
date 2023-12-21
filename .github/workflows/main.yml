@@ -20,10 +20,10 @@ jobs:
         java-version: '17'
 
     - name: Make Gradle Wrapper Executable
-      run: chmod +x ./gradlew
+      run: chmod +x ./hello/gradlew
 
     - name: Build with Gradle
-      run: ./gradlew clean build
+      run: ./hello/gradlew clean build
 
     - name: Run Java Application
       run: java -jar build/libs/hello-app.war
