@@ -20,5 +20,3 @@ jobs:
       run:  cd /home/joeun/workspace/HelloSpringBoot && 
             ./start.sh 
             
-    - name: Post-check Repository
-      run: exit 0
