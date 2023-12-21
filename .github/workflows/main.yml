@@ -18,5 +18,7 @@ jobs:
 
     - name: deploy to server
       run:  cd /home/joeun/workspace/HelloSpringBoot && 
-            ./start.sh &&
-            exit 0
+            ./start.sh 
+            
+    - name: Post-check Repository
+      run: exit 0
