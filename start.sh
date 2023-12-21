@@ -26,3 +26,6 @@ cd ./build/libs
 
 # Run the application
 nohup java -jar hello-application.war
+
+
+exit 0
