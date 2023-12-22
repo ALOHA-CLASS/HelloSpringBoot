@@ -21,4 +21,5 @@ jobs:
     #         nohup java -jar hello-application.war &
     - name: deploy to server
       run:  |
-            sudo ./start.sh &
+            sudo ./start.sh 
+            sleep 30
