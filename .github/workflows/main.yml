@@ -10,11 +10,26 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    # - name: deploy to server
-    - name: deploy to server
-      run:  |
-            sudo ./start.sh 
-            sleep 5
+      - name: Build with Gradle
+        run: ./gradlew clean build
+
+  deploy:
+    needs: build
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to Server
+        run: |
+          echo "> 새로운 애플리케이션 배포"
+          cd $GITHUB_WORKSPACE/build/libs
+          # cd /home/joeun/workspace/HelloSpringBoot/build/libs
+          
+          # 서버 실행
+          echo "> 서버 실행"
+          nohup java -jar "hello-application.war" &
