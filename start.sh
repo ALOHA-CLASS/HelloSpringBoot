@@ -4,14 +4,32 @@
 PROJECT_NAME=hello-application
 REPOSITORY=/home/joeun/workspace/HelloSpringBoot
 DEPLOY_PATH=/home/joeun/workspace/HelloSpringBoot/build/libs
+GIT_URL=https://github.com/ALOHA-CLASS/HelloSpringBoot.git
 
 # 프로젝트 경로로 이동
 echo "> ${REPOSITORY} 로 이동"
 cd $REPOSITORY
 
 # GIT PULL 진행
+# echo "> GIT PULL"
+# git pull
+
 echo "> GIT PULL"
-git pull
+if git pull; then
+  echo "> git pull 성공"
+else
+  echo "> git pull 실패. 레포지토리를 새로 clone합니다."
+
+  # 기존 레포지토리 제거
+  rm -rf $REPOSITORY
+
+  # 새로운 레포지토리 클론
+  git clone $GIT_URL $REPOSITORY
+
+  # 클론한 프로젝트로 이동
+  cd $REPOSITORY
+fi
+
 
 # 빌드 시작
 echo "> gradle clean build"
