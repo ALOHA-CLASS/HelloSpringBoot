@@ -20,5 +20,5 @@ jobs:
     #   run:  cd /home/joeun/workspace/HelloSpringBoot/build/libs && 
     #         nohup java -jar hello-application.war &
     - name: deploy to server
-      run:  nohup ./start.sh &
-            sleep 30
+      run:  |
+            sudo ./start.sh &
