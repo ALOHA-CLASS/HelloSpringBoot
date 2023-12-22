@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# 저장소
-PROJECT_NAME = hello-application
-REPOSITORY = /home/joeun/workspace/HelloSpringBoot
-DEPLOY_PATH = /home/joeun/workspace/HelloSpringBoot/build/libs
+# 변수 선언 (=) 앞뒤로 공백❌
+PROJECT_NAME=hello-application
+REPOSITORY=/home/joeun/workspace/HelloSpringBoot
+DEPLOY_PATH=/home/joeun/workspace/HelloSpringBoot/build/libs
 
 # 프로젝트 경로로 이동
 echo "> ${REPOSITORY} 로 이동"
@@ -18,7 +18,7 @@ echo "> gradle clean build"
 ./gradlew clean build 
 
 # 현재 실행 중인 서버 pid(프로세스 아이디) 확인
-CURRENT_PID = ${pgrep -f ${PROJECT_NAME}.war}
+CURRENT_PID=$(pgrep -f "${PROJECT_NAME}.war")
 
 echo "> 현재 실행 중인 서버 pid : ${CURRENT_PID}"
 
@@ -35,5 +35,5 @@ fi
 echo "> 새로운 애플리케이션 배포"
 cd $DEPLOY_PATH
 
-nohup java -jar $PROJECT_NAME.war
+nohup java -jar "${PROJECT_NAME}.war" &
 

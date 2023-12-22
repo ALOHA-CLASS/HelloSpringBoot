@@ -37,6 +37,5 @@ tasks.named('test') {
 }
 
 bootWar {
-	enabled = false
     archiveFileName = 'hello-application.war'
 }
