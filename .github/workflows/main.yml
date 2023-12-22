@@ -27,8 +27,8 @@ jobs:
       - name: Deploy to Server
         run: |
           echo "> 새로운 애플리케이션 배포"
-          cd $GITHUB_WORKSPACE/build/libs
-          # cd /home/joeun/workspace/HelloSpringBoot/build/libs
+          # cd $GITHUB_WORKSPACE/build/libs
+          cd /home/joeun/workspace/HelloSpringBoot/build/libs
           
           # 서버 실행
           echo "> 서버 실행"
