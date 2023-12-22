@@ -2,9 +2,9 @@
 
 # 변수 선언 (=) 앞뒤로 공백❌
 PROJECT_NAME=hello-application
+WORKSPACE=/home/joeun/workspace
 REPOSITORY=/home/joeun/workspace/HelloSpringBoot
 DEPLOY_PATH=/home/joeun/workspace/HelloSpringBoot/build/libs
-GIT_URL=https://github.com/ALOHA-CLASS/HelloSpringBoot.git
 
 # 프로젝트 경로로 이동
 echo "> ${REPOSITORY} 로 이동"
@@ -18,16 +18,8 @@ echo "> GIT PULL"
 if git pull; then
   echo "> git pull 성공"
 else
-  echo "> git pull 실패. 레포지토리를 새로 clone합니다."
-
-  # 기존 레포지토리 제거
-  rm -rf $REPOSITORY
-
-  # 새로운 레포지토리 클론
-  git clone $GIT_URL $REPOSITORY
-
-  # 클론한 프로젝트로 이동
-  cd $REPOSITORY
+  echo "> git pull 실패"
+  exit 1
 fi
 
 
