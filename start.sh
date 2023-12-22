@@ -3,12 +3,12 @@
 # Find the process ID (PID) of the process containing "hello-application.war"
 pid=$(pgrep -f hello-application.war)
 
-if [ -n "$pid" ]; then
-  echo "Found process ID: $pid"
+if [ -n $pid ]; then
+  echo "Found process ID: ${pid}"
   echo "Killing process..."
-  kill "$pid"
+  kill $pid
   echo "Process killed successfully."
-else
+else``
   echo "No process found with the specified name."
 fi
 
