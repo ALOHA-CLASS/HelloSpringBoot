@@ -11,9 +11,6 @@ echo "> ${REPOSITORY} 로 이동"
 cd $REPOSITORY
 
 # GIT PULL 진행
-# echo "> GIT PULL"
-# git pull
-
 echo "> GIT PULL"
 if git pull; then
   echo "> git pull 성공"
@@ -21,7 +18,6 @@ else
   echo "> git pull 실패"
   exit 1
 fi
-
 
 # 빌드 시작
 echo "> gradle clean build"
